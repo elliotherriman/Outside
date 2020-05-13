@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,700|Quattrocento:700');
+
+body
+{
+	  font-family: 'Open Sans', sans-serif;
+	  font-weight: light;
+	  background: white;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  overflow: hidden; /* Hide scrollbars */
+}
+
+body.dark
+{
+	  background: black;
+	  color: white;
+}
+
+h1, h2 
+{
+	  margin: 0;
+	  padding: 0;
+}
+
+h1
+{
+	  font-size: 24pt;
+}
+
+h2
+{
+	  font-size: 14pt;
+	  font-family: sans-serif;
+	  font-weight: light;
+	  color: #BBB;
+}
+
+.dark h2
+{
+	  color: #666;
+}
+
+.header
+{
+	margin-bottom: 1em;
+}
+
+.header :first-child
+{
+	  padding-top: 1em;
+}
+
+/* `first` choice */
+:not(.choice) + .choice 
+{
+
+}
+
+
+/* Seems necessary to make iframes work on itch.io on mobile iOS :-( */
+.outerContainer
+{
+	  position: absolute;
+	  display: block;
+	  margin: 0;
+	  padding: 0;
+	  -webkit-overflow-scrolling: touch;
+	  overflow: scroll;
+	  height: 100%;
+	  width: 100%;
+	  top: 0;
+	  left: 0;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+.container
+{
+	  display: block;
+	  max-width: 600px;
+	  margin: 0 auto;
+	  padding: 20px;
+}
+
+p, a
+{
+	  font-size: 13pt;
+	  color: #888;
+	  line-height: 1.7em;
+	  font-weight: light;
+}
+
+a 
+{
+	  color: #d479b8;
+	  transition: color 0.6s;
+}
+
+.container .hide
+{
+	  opacity: 0.0;
+}
+
+.container .invisible
+{
+	  display: none;
+}
+
+.container * 
+{
+	  opacity: 1.0;
+	  transition: opacity 1.0s;
+}
+
+.start p
+{
+	position:relative;
+	clear: both;
+	text-align: center;
+	align-items:center;
+	justify-content:center;
+	padding:20px;
+	margin: 0px;
+}
+
+p.ren, p.matt, p.sophie, p.sam {
+	float: left;
+	text-align: left;
+	background-color:#333;
+	color: #aaa;
+	padding: 10px 20px 10px 20px;
+	border-radius:30px;
+	max-width:300px;
+	margin:3px;
+}
+
+p.ren
+{
+	color: #ddd;
+	float: right;
+	background-color:#046c93;
+}
+
+p.matt 
+{
+
+}
+
+p.sophie
+{
+
+}
+
+p.sam 
+{
+
+}
