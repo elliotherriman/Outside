@@ -1,0 +1,1 @@
+nodemon app.js -e ink,js,css,html

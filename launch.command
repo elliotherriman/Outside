@@ -1,0 +1,1 @@
+cd "$(dirname "$0")"; nodemon app.js -e ink,js,css,html
